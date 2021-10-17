@@ -119,7 +119,7 @@ function Login() {
             Logout
             </Button>
             <Button
-              href ="/users/forgotPassword"
+              href ="/forgotPassword"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
