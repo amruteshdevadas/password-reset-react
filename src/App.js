@@ -10,10 +10,8 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path="/" exact={true}>
-            <h3>Welcome to Password Reset </h3>        
-          </Route>
-          <Route path="/register" exact={true} component={Register} />
+          
+          <Route path="/" exact={true} component={Register} />
           <Route path="/login" exact={true} component={Login} />
           <Route
             path="/forgotPassword"
