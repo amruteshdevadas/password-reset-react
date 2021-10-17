@@ -20,9 +20,9 @@ function ChangePassword(props) {
   const handleSubmit = async (e) => {
     let url = props.match.url;
     try {
-      console.log("sending request")
-      console.log(`${url}`)
-      await axios.post(`${url}`, { password: e.password }).then((response) => {
+      // console.log("sending request")
+      // console.log(`${url}`)
+      await axios.post(`https://password-reset-b251-wd-task.herokuapp.com${url}`, { password: e.password }).then((response) => {
         console.log(response.data.message)
         setMessage(response.data.message)
           setTimeout(() => {
