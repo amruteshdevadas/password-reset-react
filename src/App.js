@@ -15,10 +15,10 @@ function App() {
             <h3>Welcome to Password Reset </h3>
             </>
           </Route>
-          <Route path="/users/register" exact={true} component={Register} />
-          <Route path="/users/login" exact={true} component={Login} />
+          <Route path="/register" exact={true} component={Register} />
+          <Route path="/login" exact={true} component={Login} />
           <Route
-            path="/users/forgotPassword"
+            path="/forgotPassword"
             exact={true}
             component={Forgotpassword}
           />

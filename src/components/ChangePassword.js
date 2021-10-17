@@ -26,7 +26,7 @@ function ChangePassword(props) {
         console.log(response.data.message)
         setMessage(response.data.message)
           setTimeout(() => {
-            history.push("/users/login");
+            history.push("/login");
           }, 1000);    
       });
     } catch (error) {

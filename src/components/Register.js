@@ -26,14 +26,14 @@ const [message ,setMessage] = useState("")
     let newUser = e
     try {
       let user = await axios
-        .post("/users/register",{newUser})
+        .post("https://password-reset-b251-wd-task.herokuapp.com/users/register",{newUser})
         .then((response) => { 
             if(response.status === 200)
             {
               setMessage("Successfully Registered")
             }
             setTimeout(()=>{
-                history.push('/users/login')
+                history.push('/login')
             },1000)
         });
     } catch (error) 

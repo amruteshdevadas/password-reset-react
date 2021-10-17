@@ -18,7 +18,7 @@ function Forgotpassword() {
   const handleSubmit = async (e) => {
     try {
       await axios
-        .post("/users/forgetPassword", { id: e.email })
+        .post("https://password-reset-b251-wd-task.herokuapp.com/users/forgetPassword", { id: e.email })
         .then((response) => {
           console.log(response)
           setMessage(response.data)
