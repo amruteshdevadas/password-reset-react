@@ -28,7 +28,6 @@
     "eject": "react-scripts eject"
   },
 
-  "proxy": "https://password-reset-b251-wd-task.herokuapp.com/",
 
   "eslintConfig": {
     "extends": [
